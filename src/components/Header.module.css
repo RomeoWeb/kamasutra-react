@@ -1,0 +1,14 @@
+.header {
+   grid-area: header;
+   background-color: rgb(184, 184, 184);
+   margin-bottom: 10px;
+   padding: 10px 0;
+   min-height: 70px;
+ }
+ .logo {
+   max-width: 100px;
+   margin-left: 20px;
+ }
+ .logo__img {
+   width: 100%;
+ }
