@@ -1,4 +1,6 @@
 import s from './Profile.module.css';
+import MyPosts from './MyPosts/MyPosts';
+
 
 const Profile = () => {
    return (
@@ -15,6 +17,7 @@ const Profile = () => {
           <div className={s.item}>What a nice weather!</div>
         </div>
       </div>
+      < MyPosts />
     </main>
    )
 };
