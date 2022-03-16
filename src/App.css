@@ -12,7 +12,8 @@ a {
   font-size: 18px;
 }
 a:hover {
-  color: red;
+  cursor: pointer;
+  color: #b9b9b9;
 }
 ul {
   padding-left: 20px;
