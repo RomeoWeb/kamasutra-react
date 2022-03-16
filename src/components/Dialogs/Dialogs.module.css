@@ -1,4 +1,26 @@
-.wrapper {
+.title {
    color: red;
-   background-color: green;
+}
+
+.wrapper {
+   width: 100%;
+   background-color: coral;
+}
+
+.wrapperInner {
+   display: flex;
+   /* justify-content: space-between; */
+}
+
+.dialogs {
+   padding-left: 20px;
+   /* border: 1px solid; */
+}
+
+.dialogsItem.active {
+   color: gold;
+}
+.messages {
+   /* border: 1px solid; */
+   margin-left: 50px;
 }

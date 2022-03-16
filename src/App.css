@@ -26,9 +26,6 @@ ul {
 .main-wrapper {
   display: flex;
 }
-
-
-
 .main {
   grid-area: main;
   /* background-color: rgb(101, 134, 101); */
