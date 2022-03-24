@@ -1,0 +1,11 @@
+.main__img {
+  max-width: 100%;
+ 
+}
+.main__img img {
+  width: 100%;
+ 
+}
+.client {
+  padding: 10px;
+}

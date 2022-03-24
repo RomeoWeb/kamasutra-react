@@ -28,7 +28,7 @@ ul {
 }
 .main {
   grid-area: main;
-  /* background-color: rgb(101, 134, 101); */
+  background: #00abff;
   padding: 0 10px;
   width: 100%;
 }

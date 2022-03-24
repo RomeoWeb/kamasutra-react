@@ -3,3 +3,9 @@
   color: rgb(131, 34, 34);
   font-size: 30px;
 }
+.posts_wrapper {
+  padding: 10px;
+}
+.my_posts {
+  margin-top: 20px;
+}
