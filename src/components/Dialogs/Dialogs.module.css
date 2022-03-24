@@ -21,6 +21,9 @@
 .dialogsItem.active {
    color: gold;
 }
+.dialogsItem::hover {
+   color: red;
+}
 .messages {
    /* border: 1px solid; */
    margin-left: 50px;
