@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 const App = (props) => {
+
+
   return (
     <BrowserRouter>
       <div className="wrapper">
@@ -17,14 +19,8 @@ const App = (props) => {
           <div className="main-wrapper">
             <NavBar />
             <Routes>
-              <Route path="/dialogs/*" element={ <Dialogs />} />
-              <Route path="/profile" element={<Profile />} />
-
-              {/* <Route path="/dialogs/*" render = { () => <Dialogs />} />
-              <Route path="/profile"   render = { () => <Profile />} /> */}
-
-              {/* <Route path="/dialogs/*" element = { () => <Dialogs />} />
-              <Route path="/profile"   element = { () => <Profile />} /> */}
+              <Route path="/dialogs/*" element= { <Dialogs dialogs = {props.dialogs} messages = {props.messages}/>} />
+              <Route path="/profile"   element= {<Profile post = {props.posts}/>} />
             </Routes>
           </div>
         </div>

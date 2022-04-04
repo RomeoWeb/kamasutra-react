@@ -4,7 +4,7 @@ const ProfileInfo = () => {
    return (
      <div>
       <div className={s.main__img}>
-        <img src="https://cdn.wallpapersafari.com/99/16/zUOgPe.jpg"/>
+        {/* <img src="https://cdn.wallpapersafari.com/99/16/zUOgPe.jpg"/> */}
       </div>
 
       <div className={s.client}>
