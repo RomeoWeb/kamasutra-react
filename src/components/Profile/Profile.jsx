@@ -4,11 +4,11 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
 const Profile = (props) => {
-    
+  debugger;
    return (
     <main className={s.main}>
       < ProfileInfo /> 
-      < MyPosts post = { props.post }/>
+      < MyPosts post = { props.state.posts }/>
     </main>
    )
 };
