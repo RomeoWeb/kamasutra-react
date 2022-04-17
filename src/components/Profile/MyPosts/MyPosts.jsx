@@ -4,15 +4,23 @@ import Post from './Post/Post';
 
 
 const MyPosts = (props) => {
-
+ 
   let newPostElement = useRef();
-  //let newPostElement = React.creatRef();
+ 
 
   let addPost = () => {
-    // debugger;
+   
     let text = newPostElement.current.value;
     props.addPost(text);
-    newPostElement.current.value = '';
+  
+  }
+  
+  let onPostChange = () => {
+
+    let text = newPostElement.current.value;
+    // console.log(text);
+    props.updateNewText(text);
+
   }
 
    let post =
@@ -21,7 +29,7 @@ const MyPosts = (props) => {
     <div className={s.posts_wrapper}>
       <h3>My Posts</h3>
       <div>
-        <textarea ref={newPostElement}></textarea>
+        <textarea ref={newPostElement} onChange={onPostChange} value={props.newPostText}/>
       </div>
       <div>
         <button onClick={addPost}>Add Post</button>
