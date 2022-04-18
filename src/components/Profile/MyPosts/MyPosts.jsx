@@ -7,12 +7,9 @@ const MyPosts = (props) => {
  
   let newPostElement = useRef();
  
-
   let addPost = () => {
-   
-    let text = newPostElement.current.value;
+   let text = newPostElement.current.value;
     props.addPost(text);
-  
   }
   
   let onPostChange = () => {
@@ -20,8 +17,7 @@ const MyPosts = (props) => {
     let text = newPostElement.current.value;
     // console.log(text);
     props.updateNewText(text);
-
-  }
+}
 
    let post =
    props.post.map(p =>  < Post message = { p.post} likesCount = { p.likesCount }/>)

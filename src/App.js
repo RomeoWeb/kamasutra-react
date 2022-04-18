@@ -20,7 +20,10 @@ const App = (props) => {
             <NavBar />
             <Routes>
               <Route path="/dialogs/*" 
-                        element= { <Dialogs state = {props.state.dialogsPage} />} />
+                        element= { <Dialogs
+                         state = {props.state.dialogsPage}
+                         addNewMessage = {props.addNewMessage}
+                          />} />
               <Route path="/profile" 
                         element= {<Profile
                         profilePage = {props.state.profilePage}
